@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <script src="../task5.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            width: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            text-align: center;
+        }
+
+        tr,
+        td {
+            border: 1px solid gray;
+            white-space: pre-line;
+        }
+
+        .head-row {
+            background-color: lightblue;
+        }
+
+        .bottom-row {
+            height: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="head-row">
+            <td><strong>Завдання</strong></td>
+            <td></td>
+            <td><strong>Результат</strong></td>
+        </tr>
+        <tr class="bottom-row">
+            <td><strong>Завдання №1. </strong>Виведення поточної дати та часу</td>
+            <td><button id="show-date" type="button">Виконати</button></td>
+            <td id="date-cell"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
