@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <script src="../task10.js" defer></script>
+    <style>
+        .slider {
+            width: 400px;
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .viewport {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slides img {
+            width: px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        button {
+            height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <button class="prev">◀</button>
+
+        <div class="viewport">
+            <div class="slides">
+                <img src="../imgs/1.jpg" />
+                <img src="../imgs/2.jpg" />
+                <img src="../imgs/3.jpg" />
+                <img src="../imgs/4.jpg" />
+            </div>
+        </div>
+
+        <button class="next">▶</button>
+    </div>
+</body>
+
+</html>

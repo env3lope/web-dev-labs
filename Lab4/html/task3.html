@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <script src="../task3.js" defer></script>
+    <style>
+        body {
+            width: fit-content;
+        }
+
+        .answers {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Загальний рахунок <span class="correct-percentage">0%</span> (<span class="correct-answers">0</span> правильних
+        відповідей з <span class="answers-count">0</span>)</p>
+    <button type="button" class="next-question-btn">Наступне завдання</button>
+    <p class="equation"></p>
+    <div class="answers">
+        <div>
+            <input type="radio" name="answer" value="" id="first-answer">
+            <label for="first-answer"></label>
+        </div>
+        <div>
+            <input type="radio" name="answer" value="" id="second-answer">
+            <label for="second-answer"></label>
+        </div>
+        <div>
+            <input type="radio" name="answer" value="" id="third-answer">
+            <label for="third-answer"></label>
+        </div>
+        <div>
+            <input type="radio" name="answer" value="" id="fourth-answer">
+            <label for="fourth-answer"></label>
+        </div>
+    </div>
+    <p class="check-answer"></p>
+</body>
+
+</html>

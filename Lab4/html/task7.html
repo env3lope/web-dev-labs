@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <script src="../task7.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .container div div:last-child {
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid black;
+        }
+
+        .rectangle {
+            background-color: lightblue;
+            border: 1px solid blue;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <label for="width">width: 0</label>
+            <input type='range' value="250" id="width" min="0" max="500" step="10">
+            <p>500</p>
+            <div class="width-value"></div>
+        </div>
+        <div>
+            <label for="height">height: 0</label>
+            <input type='range' value="250" id="height" min="0" max="500" step="10">
+            <p>500</p>
+            <div class="height-value"></div>
+        </div>
+        <div>
+            <label for="rotate">rotate: 0</label>
+            <input type='range' value="180" id="rotate" min="0" max="360">
+            <p>360</p>
+            <div class="rotate-value"></div>
+        </div>
+    </div>
+
+    <div class="rectangle">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <script src="../task4.js" defer></script>
+    <style>
+        body {
+            width: fit-content;
+        }
+
+        .equation-container {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 350px;
+            height: 20px;
+            padding-top: 20px;
+            gap: 8px;
+        }
+
+        .equation {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Загальний рахунок <span class="correct-percentage">0%</span> (<span class="correct-answers">0</span> правильних
+        відповідей з <span class="answers-count">0</span>)</p>
+    <button type="button" class="next-question-btn">Наступне завдання</button>
+    <div class="equation-container">
+        <p class="equation"></p>
+        <input type="text" id="userGuess">
+        <button class="check-user-guess">Перевірити</button>
+    </div>
+    <p class="check-answer"></p>
+</body>
+
+</html>

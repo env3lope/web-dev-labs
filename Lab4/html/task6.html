@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <script src="../task6.js" defer></script>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            justify-content: space-between;
+            gap: 24px
+        }
+
+        section {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid lightblue;
+        }
+
+        input,
+        textarea {
+            border: 1px solid lightblue;
+        }
+
+        .colored-background {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <section>
+            <input type="text" id="login" placeholder="login">
+        </section>
+        <section>
+            <input type="password" id="password" placeholder="password">
+        </section>
+        <section>
+            <textarea name="description" id="description" placeholder="description"></textarea>
+        </section>
+    </form>
+</body>
+
+</html>
