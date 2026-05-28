@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 6px 12px;
+        }
+    </style>
+    <script src="../task1.js" defer></script>
+</head>
+
+<body>
+    <table id="usersTable">
+        <tr>
+            <th>Номер</th>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+        </tr>
+    </table>
+    <form id="userForm">
+        <input type="text" id="firstName" placeholder="Ім'я" required>
+        <input type="text" id="lastName" placeholder="Прізвище" required>
+        <button type="submit">Додати користувача</button>
+    </form>
+</body>
+
+</html>

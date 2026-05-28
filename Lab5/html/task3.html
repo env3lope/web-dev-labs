@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #palette {
+            display: flex;
+            width: 120px;
+            height: 120px;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        .color {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .selected {
+            border: 2px solid blue;
+        }
+
+        #rect {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="../task3.js" defer></script>
+</head>
+
+<body>
+
+    <div id="palette">
+        <div class="color" style="background:#c00000"></div>
+        <div class="color" style="background:#ff0000"></div>
+        <div class="color" style="background:#ffbd00"></div>
+        <div class="color" style="background:#ffff00"></div>
+        <div class="color" style="background:#92d050"></div>
+        <div class="color" style="background:#00b050"></div>
+        <div class="color" style="background:#00b0f0"></div>
+        <div class="color" style="background:#0070c0"></div>
+        <div class="color" style="background:#002060"></div>
+    </div>
+
+    <div id="rect"></div>
+</body>
+
+</html>

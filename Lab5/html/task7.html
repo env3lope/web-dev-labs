@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        #container {
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .square {
+            width: 40px;
+            height: 40px;
+            background: steelblue;
+            position: absolute;
+            cursor: grab;
+        }
+
+        .square:active {
+            cursor: grabbing;
+        }
+    </style>
+    <script src="../task7.js" defer></script>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+
+</html>

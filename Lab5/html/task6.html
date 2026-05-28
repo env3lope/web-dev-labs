@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .board {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card {
+            width: 80px;
+            height: 120px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 1.5s;
+            transform-style: preserve-3d;
+        }
+
+        .card.flipped .inner {
+            transform: rotateY(180deg);
+        }
+
+        .face,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back {
+            background: gray;
+        }
+
+        .face {
+            background: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+    <script src="../task6.js" defer></script>
+</head>
+
+<body>
+    <div class="board">
+        <div class="card">
+            <div class="inner">
+                <div class="back"></div>
+                <div class="face">A♠</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner">
+                <div class="back"></div>
+                <div class="face">K♥</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner">
+                <div class="back"></div>
+                <div class="face">10♦</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
