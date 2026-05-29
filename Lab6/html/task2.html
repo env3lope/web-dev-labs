@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab6</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+    <script src="../task2.js" defer></script>
+</head>
+
+<body>
+
+    <form id="form">
+
+        <input type="text" name="username" placeholder="Ім'я">
+
+        <textarea name="comment" placeholder="Коментар"></textarea>
+
+        <label>
+            <input type="checkbox" name="agree">
+            Погоджуюсь
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="gender" value="male"> Чоловік
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="female"> Жінка
+        </label>
+
+        <br><br>
+
+        <select name="city">
+            <option value="">Виберіть місто</option>
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+        </select>
+
+    </form>
+</body>
+
+</html>

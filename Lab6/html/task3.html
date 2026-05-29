@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab6</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        #input {
+            width: 400px;
+            height: 80px;
+        }
+
+        #error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        #gallery img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        #preview {
+            margin-top: 20px;
+        }
+
+        #preview img {
+            max-width: 400px;
+            max-height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="../task3.js" defer></script>
+</head>
+
+<body>
+    <textarea id="input" placeholder='["file1.jpg","file2.jpg"]'></textarea>
+    <br>
+    <button id="btn">Показати</button>
+
+    <div id="error"></div>
+    <div id="gallery"></div>
+
+    <div id="preview"></div>
+</body>
+
+</html>
